@@ -30,7 +30,7 @@ export default function Carousel({ section, page, setPage }: props) {
     return (
         <>
             <Modal imgsAdd={selected?.imgs} section={section} img={selected?.capa} nome={selected?.titulo} aparicoes={selected?.aparicoes} descricao={selected?.descricao} avaliacao={selected?.stars} onClose={() => setOpen(false)} open={open} />
-            <div className="flex flex-col h-full w-full pt-20 flex-grow">
+            <div className="flex flex-col min-h-screen full w-full pt-20 flex-grow">
                 {
                     section === 1 && <div className="absolute z-40 bg-black ml-32 flex flex-col border-[#ff0000] border rounded-xl w-fit text-[#ff0000] p-1 px-4 gap-1">
                         {!openFiltro ? <button onClick={() => setOpenFiltro(true)} className="w-full  flex items-center gap-1">{filtro === 'lancamento' ? 'Lançamento' : 'Cronologia'} <MdKeyboardArrowDown style={{ color: '#ff0000' }} /></button> :

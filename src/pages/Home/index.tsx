@@ -39,7 +39,7 @@ export default function Home() {
                 <img src={person} alt="" className="rounded-full w-[5rem] h-[5rem]" />
             </div>
 
-            <div className="w-full flex-grow bg-gradient-to-r from-black from-60%">
+            <div className="w-full fit-content bg-gradient-to-r from-black from-60% overflow-x-hidden  overflow-y-hidden">
                 <Carousel page={page} setPage={setPage} section={menu}/>
             </div>
             <img className='fixed -bottom-32 -right-56 -z-10 h-full' src={banner} alt="" />
