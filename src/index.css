@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'marvel';
+    src: url('./assets/fonts/MarvelRegular-Dj83.ttf') format('truetype');
+}
