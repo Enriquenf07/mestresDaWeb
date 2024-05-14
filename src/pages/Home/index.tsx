@@ -19,7 +19,7 @@ export default function Home() {
     }
 
     return (
-        <div className="absolute z-10 flex flex-col w-screen h-screen">
+        <div className="absolute z-10 flex flex-col w-screen min-h-screen bg-black">
             <div className="flex bg-black z-10 justify-between items-center w-full pt-5 px-12 border-b border-[#ff0000]">
                 <HeaderTitle />
                 <div className="flex gap-7">
@@ -39,7 +39,7 @@ export default function Home() {
                 <img src={person} alt="" className="rounded-full w-[5rem] h-[5rem]" />
             </div>
 
-            <div className="w-full fit-content bg-gradient-to-r from-black from-60% overflow-x-hidden  overflow-y-hidden">
+            <div className="w-full fit-content bg-gradient-to-r from-black from-60% ">
                 <Carousel page={page} setPage={setPage} section={menu}/>
             </div>
             <img className='fixed -bottom-32 -right-56 -z-10 h-full' src={banner} alt="" />

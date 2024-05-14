@@ -15,7 +15,7 @@ type props = {
 export default function Modal({ imgsAdd, section, img, nome, descricao, avaliacao, onClose, open, aparicoes }: props) {
     return (
         <>
-            {open && <div className="absolute z-50 h-screen w-screen bg-black bg-opacity-75 top-0 left-0 flex justify-start items-end p-20 pl-32">
+            {open && <div className="fixed z-50 h-screen w-screen bg-black bg-opacity-75 top-0 left-0 flex justify-start items-end p-20 pl-32">
                 <div className="flex w-[45rem] h-[30rem] bg-gradient-to-r from-[#ff0000] to-[#400e0e] rounded-3xl">
                     <img src={img} alt="" className='rounded-3xl h-full w-[20rem]' />
                     <div className='flex flex-col text-white items-center-center pl-14 pt-28 gap-4'>
